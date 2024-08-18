@@ -16,6 +16,7 @@ def clear():
     global equation
     equation = ""
     lable_result.config(text = equation)
+
 def calculate():
      global equation
      result = ""
