@@ -7,6 +7,9 @@ win.configure(bg = "#17161b")
 win.title("Nigus's calculator ")
 
 equation = ""
+
+lable_result = Label(win,width =22, height =2, text ="",font=("arial",30),bg = "white",fg = "black").pack()
+
 def show(value):
      global equation
      equation += value
@@ -27,9 +30,6 @@ def calculate():
                result = "error"
                equation = ""
      lable_result.config(text = result)
-
-lable_result = Label(win,width =22, height =2, text ="",font=("arial",30),bg = "white",fg = "black")
-lable_result.pack()
 
 Button(win,text = "C", width = 3, height = 1,font = ("arial",30,"bold"),bd =1,fg="red",bg = "#2a2d36",command = lambda:clear()).place(x=10,y=100)
 Button(win,text = "/", width = 3, height = 1,font = ("arial",30,"bold"),bd =1,fg="blue",bg ="#2a2d36",command = lambda:show("/")).place(x=110,y=100)
