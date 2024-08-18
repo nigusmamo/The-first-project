@@ -54,7 +54,4 @@ Button(win,text = "0", width = 9, height = 1,font = ("arial",30,"bold"),bd =1,fg
 Button(win,text = ".", width = 3, height = 1,font = ("arial",30,"bold"),bd =1,fg="black",bg ="#2a2d36",command = lambda:show(".")).place(x=210,y=340)
 Button(win,text = "=", width = 3, height = 3,font = ("arial",30,"bold"),bd =1,fg="green",bg ="red",command = lambda: calculate()).place(x=310,y=275)
 
-
-lable_result.pack()
-
 win.mainloop()
